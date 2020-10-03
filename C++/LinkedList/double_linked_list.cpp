@@ -12,6 +12,15 @@ class Node
 	Node* prev; 
 }; 
 
+//Can also be implemented using struct and then initialized using a constructor.
+struct Node{
+	int data;
+	Node *next,*prev;
+	Node(int x){
+		data= x;
+		next = prev = NULL;
+	}
+}
 
 void push(Node** head_ref, int new_data) 
 { 
